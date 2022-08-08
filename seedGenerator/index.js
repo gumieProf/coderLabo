@@ -56,7 +56,7 @@ cli
 
 cli
     .command('log', 'これまで生成されたseed値を確認')
-    .option('--length <name>', '表示する回数')
+    .option('--max <name>', '表示するseed値の最大数')
     .action((options) => {
 
         if (checkFile("./seeds.json")) {
